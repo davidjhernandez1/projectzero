@@ -1,0 +1,141 @@
+/* Cascading Style Sheet for Project0 */
+body    {
+         font-family: Futura, Trebuchet MS, Arial, san-serif;
+         color: #202124;
+        }
+      
+h1        {
+           font-size: 42pt;
+          margin: 5px;
+          }
+      
+h3        {
+           margin: 30px 0px 10px 47px;
+          }
+      
+header    {
+           max-width: 500px;
+           margin: auto;
+          }
+
+.navbar   {
+           text-align: right;
+          }
+      
+.navbar li 
+          {
+           display: inline-block;
+           padding: 10px;
+          }
+
+.navbar a {
+           color: #202124;
+          }
+ 
+ /* Just to have rounded borders in the input field */
+.search_field
+          {
+           border-radius: 25px;        
+          }
+
+/* The ancher tab, regardles of being active or hover etc, will have */
+/* no decoration                                                     */
+.navbar a, .navbar a:active, .navbar a:hover, .navbar a:visited 
+          {
+           text-decoration: none;
+          }
+
+/* Now, for the active and hover properties, those will be underlined */
+.navbar a:active, .navbar a:hover 
+          {
+           text-decoration: underline;
+          }
+      
+/* May not need it.... must research   */
+/* Removable                           */
+.searchbar {
+            border-color: #888888;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 20px;
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            width: 500px;
+           }
+      
+/* the @media rule is used in media queries to apply different styles */
+/* for different media types/devices.                                 */
+/* Removable                                                          */
+@media only screen and (max-width: 550px) {
+.searchbar {
+            width: 90%;
+           }
+/* Anything with this class will be affected by the params within it */
+.searchbar-sm 
+           {
+            border-radius: 5px;
+            display: block;
+            margin: 7px;
+            padding: 7px;
+            width: 250px; 
+           }
+      
+/* The @media rule is used in media queries to apply different styles */
+/* for different media types/devices.                                 */
+/* Removable                                                          */
+@media only screen and (max-width: 768px) 
+          {.searchbar-sm {width: 190px;}
+
+/* Anything withing the searchbutton class will be affected by the params */
+/* within it                                                              */
+.searchbutton 
+          {
+           background-color: blue;
+           border-style: none;
+           margin: 11px 4px;
+           padding: 8px 16px;
+           color: white;
+          }
+
+/* The max margin for the text-input-table will be 15px */
+.text-input-table 
+          {
+           margin: 15px 45px;
+          }
+
+/* Affects only the tr inside the text-input-table class*/
+.text-input-table tr 
+          {
+           font-size: 10pt;
+          }
+
+/* Affects only the tr & td inside the text-input-table class*/
+.text-input-table tr td .searchbutton 
+          {
+           float: right;
+           background-color: #4D90FE;
+           color: #FFFFFF;
+          }
+      
+/* .vertical-center {margin-top: 150px;}*/
+   
+/* The @media rule is used in media queries to apply different styles */
+/* for different media types/devices.                                 */
+/* Removable                                                          */
+@media only screen and (max-height: 500px) 
+          {
+           .vertical-center {
+            margin-top: 15px;
+          }
+      
+      
+/*:hover, :focus, and :active are pseudo-classes that are determined  */
+/* .navbar a user’s actions. They each correspond to a very specific  */ 
+/* point in how a user will interact with an element on a page such   */
+/* .navbar a link or a button or an input field.                      */   
+.searchbar:hover, .searchbar:focus, .searchbar-sm:hover, .searchbar-sm:focus, .searchbutton:hover 
+        {
+         box-shadow: 0 0 1px 1px #888888;
+         outline: none;
+        }
