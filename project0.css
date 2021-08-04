@@ -86,16 +86,23 @@ header  {
 /* @media only screen and (max-width: 768px) 
           {.foursearchbars {width: 190px;}                            */
 
-/* Anything within the searchbutton class will be affected by the     */  
-/* params within it                                                   */
+/* Search button blue-and-white-letters in advancesearch.html         */  
+
 .searchbutton 
           {
            background-color: blue;
+           color: white;
            border-style: none;
+           width: 415px;
+           height: 25px;
            margin: 15px 4px;
            padding: 20px;
-           color: white;
            text-align: center;
+           position: absolute;          /* Trying to center the words 'Advance search' in button */
+           top: 50%;                    /* Trying to center the words 'Advance search' in button */
+           left: 50%;                   /* Trying to center the words 'Advance search' in button */
+           margin-right: -50%;          /* Trying to center the words 'Advance search' in button */
+           transform: translate(-50%, -50%) } /* Trying to center the words 'Advance search' in button */
           }
 
 /* The max margin for the text-input-table will be 30px                */
