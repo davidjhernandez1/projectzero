@@ -1,4 +1,4 @@
-/* Cascading Style Sheet for Project0 */
+/* ---------------Cascading Style Sheet for Projectzero --------------  */
 body    {
          font-family: "Futura, Trebuchet MS, Arial, san-serif";
          color: #202124;
@@ -6,18 +6,22 @@ body    {
       
 h1        {
            font-size: 42pt;
-          margin: 5px;
+           margin: 5px;
           }
       
 h3        {
            margin: 30px 0px 10px 47px;
           }
-      
-header    {
-           text-align: right;
-           max-width: 500px;
-           margin: auto;
-          }
+
+/* td      {
+        width:"15%"
+        }                                                       */
+
+header  {
+        text-align: right;
+        max-width: 500px;
+        margin: auto;
+        }
 
 /* .navbar   {
            text-align: right;
@@ -33,6 +37,7 @@ header    {
            color: #202124;
           }                                  */
  
+/* Center search field & 2 buttons below - Search.html                 */
 .container_centering 
         {
         padding-top: 100px;
@@ -40,27 +45,16 @@ header    {
         width: 100%
         }
 
- /* Just to have rounded borders in the input field */
+ /* Create rounded borders in the input search field - Search.html     */
 .search_field
           {
-           border-radius: 50px;        
+           border-radius: 50px; 
+           width: 215px;        
           }
 
-/* The ancher tab, regardles of being active or hover etc, will have */
-/* no decoration                                                     */
-/* .navbar a, .navbar a:active, .navbar a:hover, .navbar a:visited 
-          {
-           text-decoration: none;
-          }                                                          */
 
-/* Now, for the active and hover properties, those will be underlined */
-/* .navbar a:active, .navbar a:hover 
-          {
-           text-decoration: underline;
-          }                                                          */
       
-/* May not need it.... must research   */
-/* Removable                           */
+/* May not need it.... must research - Removable                       */
 .searchbar {
             border-color: #888888;
             border-style: solid;
@@ -72,66 +66,63 @@ header    {
             width: 500px;
            }
       
-/* the @media rule is used in media queries to apply different styles */
-/* for different media types/devices.                                 */
-/* Removable                                                          */
-/*@media only screen and (max-width: 550px) { */
-
 .searchbar {
             width: 90%;
            }                                                           
 
-
-/* Anything with this class will be affected by the params within it */
-.searchbar-sm 
+/* All foursearchbars fields in advancesearch.html will be affecteds  */
+.foursearchbars 
            {
-            border-radius: 5px;
+            border-radius: 10px;
             display: block;
-            margin: 7px;
+            margin: 5px;
             padding: 7px;
-            width: 250px; 
+            width: 400px; 
            }
       
 /* The @media rule is used in media queries to apply different styles */
 /* for different media types/devices.                                 */
 /* Removable                                                          */
 /* @media only screen and (max-width: 768px) 
-          {.searchbar-sm {width: 190px;}                              */
+          {.foursearchbars {width: 190px;}                            */
 
-/* Anything withing the searchbutton class will be affected by the params */
-/* within it                                                              */
+/* Anything within the searchbutton class will be affected by the     */  
+/* params within it                                                   */
 .searchbutton 
           {
            background-color: blue;
            border-style: none;
-           margin: 11px 4px;
+           margin: 15px 4px;
            padding: 20px;
            color: white;
-           text-align: left;
+           text-align: center;
           }
 
-/* The max margin for the text-input-table will be 15px */
+/* The max margin for the text-input-table will be 30px                */
 .text-input-table 
           {
-           margin: 30px;
+           margin: 25px;
            width: 100%;
           }
 
-/* Affects only the tr inside the text-input-table class*/
+
+                             
+
+/* Affects only the tr elements  inside the advanceSearch.html         */
 .text-input-table tr 
           {
            font-size: 10pt;
           }
 
-/* Affects only the tr & td inside the text-input-table class*/
-/* .text-input-table tr td .searchbutton 
+/* Affects only the tr & td inside the text-input-table class          */
+/*.text-input-table tr td .searchbutton 
           {
            float: right;
            background-color: #4D90FE;
            color: #FFFFFF;
           }                                                           */
       
-/* .vertical-center {margin-top: 150px;}*/
+.vertical-center {margin-top: 150px;}                              
    
 /* The @media rule is used in media queries to apply different styles */
 /* for different media types/devices.                                 */
@@ -140,15 +131,32 @@ header    {
           {
            .vertical-center {
             margin-top: 15px;
-          }
-  */    
+          }                                                           */    
       
 /*:hover, :focus, and :active are pseudo-classes that are determined  */
 /* .navbar a user’s actions. They each correspond to a very specific  */ 
 /* point in how a user will interact with an element on a page such   */
 /* .navbar a link or a button or an input field.                      */   
-.searchbar:hover, .searchbar:focus, .searchbar-sm:hover, .searchbar-sm:focus, .searchbutton:hover 
+.foursearchbars:hover, .foursearchbars:focus, .searchbutton:hover 
         {
          box-shadow: 0 0 1px 1px #888888;
          outline: none;
         }
+
+        /* The ancher tab, regardless of being active or hover etc, will have  */
+/* no decoration                                                       */
+/* .navbar a, .navbar a:active, .navbar a:hover, .navbar a:visited 
+          {
+           text-decoration: none;
+          }                                                            */
+
+/* Now, for the active and hover properties, those will be underlined  */
+/* .navbar a:active, .navbar a:hover 
+          {
+           text-decoration: underline;
+          }                                                            */
+
+/* the @media rule is used in media queries to apply different styles */
+/* for different media types/devices.                                 */
+/* Removable                                                          */
+/*@media only screen and (max-width: 550px) { */
