@@ -4,124 +4,88 @@ body    {
          color: #202124;
         }
       
-h1        {
-           font-size: 42pt;
-           margin: 5px;
-          }
-      
-h3        {
-           margin: 30px 0px 10px 47px;
-          }
-
-/* td      {
-        width:"15%"
-        }                                                       */
-
-header  {
-        text-align: right;
-        max-width: 500px;
-        margin: auto;
+h1      {
+        font-size: 42pt;
+        margin: 5px;
         }
-
-/* .navbar   {
-           text-align: right;
-          }
       
-.navbar li 
-          {
-           display: inline-block;
-           padding: 10px;
-          }
+h3      {
+        margin: 30px 0px 10px 47px;                                     /* Shorthand property sets the margin area on all 4 sides of an element. */
+        }                                                               /* Top, Right, Bottom, Left                                              */
 
-.navbar a {
-           color: #202124;
-          }                                  */
- 
-/* Center search field & 2 buttons below - Search.html                 */
-.container_centering 
+/* td   {
+        width:"15%"
+        }                                                               */
+
+header, .header-links  
         {
-        padding-top: 100px;
+        align-items: right;                                             /* Property centers the alignments for all items in the div     */
+        text-align: right;                                              /* Property specifies the horiz alignment of text in an element */
+        max-width: 1100px;                                              /* Property sets the maximum width of an element in these divs  */
+        margin: auto;                                                   /* The browser calculates the margin                            */
+        } 
+
+.header-links 
+        {
+        align-items: right;
+        }
+ 
+/* Center search field & 2 buttons below - Search.html                  */
+.main-search 
+        {
+        padding-top: 60px;
         text-align: center;
         width: 100%
         }
 
- /* Create rounded borders in the input search field - Search.html     */
+ /* Create rounded borders in the input search field - Search.html      */
 .search_field
-          {
-           border-radius: 50px; 
-           width: 215px;        
-          }
+        {
+        border-radius: 50px; 
+        width: 415px;        
+        }
 
-
-      
-/* May not need it.... must research - Removable                       */
-.searchbar {
-            border-color: #888888;
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 20px;
-            display: block;
-            margin: 10px;
-            padding: 10px;
-            width: 500px;
-           }
-      
-.searchbar {
-            width: 90%;
-           }                                                           
-
-/* All foursearchbars fields in advancesearch.html will be affecteds  */
+/* All foursearchbars fields being affected in the advancesearch.html   */
 .foursearchbars 
-           {
-            border-radius: 10px;
-            display: block;
-            margin: 5px;
-            padding: 7px;
-            width: 400px; 
-           }
-      
-/* The @media rule is used in media queries to apply different styles */
-/* for different media types/devices.                                 */
-/* Removable                                                          */
-/* @media only screen and (max-width: 768px) 
-          {.foursearchbars {width: 190px;}                            */
+        {
+        border-radius: 10px;
+        display: block;
+        margin: 5px;
+        padding: 7px;
+        width: 400px; 
+        /* height: 300px;    doesn't work */
+        }
 
-/* Search button blue-and-white-letters in advancesearch.html         */  
-
+/* searchbutton found below the 4 searh fields in advancesearch.html    */
 .searchbutton 
-          {
-           background-color: blue;
-           color: white;
-           border-style: none;
-           width: 415px;
-           height: 25px;
-           margin: 15px 4px;
-           padding: 20px;
-           text-align: center;
-           position: absolute;          /* Trying to center the words 'Advance search' in button */
-           top: 50%;                    /* Trying to center the words 'Advance search' in button */
-           left: 50%;                   /* Trying to center the words 'Advance search' in button */
-           margin-right: -50%;          /* Trying to center the words 'Advance search' in button */
-           transform: translate(-50%, -50%) } /* Trying to center the words 'Advance search' in button */
-          }
+        {
+        background-color: blue;
+        color: white;
+        border-style: none;
+        width: 415px;
+        height: 15px;
+        margin: 15px 4px;                                               /* Margin property shorthand for margin-top and margin-right properties */
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 35px;
+        padding-left: 25px;
+        padding-right: 50px;
+        }
 
-/* The max margin for the text-input-table will be 30px                */
+/* Max left margin for the text-input-table class in advancesearch.html*/
 .text-input-table 
           {
-           margin: 25px;
+           margin: 25px; 
            width: 100%;
           }
 
-
-                             
-
-/* Affects only the tr elements  inside the advanceSearch.html         */
+/* Styling only the table row tr elements inside the advanceSearch.html
 .text-input-table tr 
           {
            font-size: 10pt;
-          }
+          }  */
 
-/* Affects only the tr & td inside the text-input-table class          */
+/* Styling the tr's & td's inside the text-input-table class in advanceSearch.html */
 /*.text-input-table tr td .searchbutton 
           {
            float: right;
@@ -141,29 +105,23 @@ header  {
           }                                                           */    
       
 /*:hover, :focus, and :active are pseudo-classes that are determined  */
-/* .navbar a user’s actions. They each correspond to a very specific  */ 
-/* point in how a user will interact with an element on a page such   */
-/* .navbar a link or a button or an input field.                      */   
+/*                                                                    */   
 .foursearchbars:hover, .foursearchbars:focus, .searchbutton:hover 
         {
          box-shadow: 0 0 1px 1px #888888;
          outline: none;
         }
 
-        /* The ancher tab, regardless of being active or hover etc, will have  */
-/* no decoration                                                       */
-/* .navbar a, .navbar a:active, .navbar a:hover, .navbar a:visited 
-          {
-           text-decoration: none;
-          }                                                            */
-
-/* Now, for the active and hover properties, those will be underlined  */
-/* .navbar a:active, .navbar a:hover 
-          {
-           text-decoration: underline;
-          }                                                            */
 
 /* the @media rule is used in media queries to apply different styles */
 /* for different media types/devices.                                 */
 /* Removable                                                          */
 /*@media only screen and (max-width: 550px) { */
+              
+/* The @media rule is used in media queries to apply different styles */
+/* for different media types/devices.                                 */
+/* Removable                                                          */
+/* @media only screen and (max-width: 768px) 
+          {.foursearchbars {width: 190px;}                            */
+
+/* Search button blue-and-white-letters in advancesearch.html         */ 
