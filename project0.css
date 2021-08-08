@@ -38,22 +38,49 @@ header, .header-links
         width: 100%
         }
 
- /* Create rounded borders in the input search field - Search.html      */
+ /* Create rounded borders in the input search field - index.html      */
 .search_field
         {
         border-radius: 50px; 
-        width: 415px;        
+        width: 280px;        
         }
 
 /* All foursearchbars fields being affected in the advancesearch.html   */
 .foursearchbars 
         {
         border-radius: 10px;
-        display: block;
-        margin: 5px;
+        margin-right: 300px;
         padding: 7px;
-        width: 400px; 
+        width: 250px; 
+        text-align: right;
+        border: 1px solid red;
+ 
         /* height: 300px;    doesn't work */
+        }
+
+/* To center text & search field in searchimages.html                    */
+.search-container
+        {
+        text-align: center;
+        border: 1px solid black;
+        }
+        
+.main_div
+        {
+        width: 100%;
+        border: 1px solid green;
+        }
+
+.input-field
+        {
+        width: 100%;
+        border: 1px solid purple;
+        margin: auto;
+        }
+
+.label
+        {
+        display:inline-block;
         }
 
 /* searchbutton found below the 4 searh fields in advancesearch.html    */
@@ -72,12 +99,6 @@ header, .header-links
         padding-right: 50px;
         }
 
-/* Max left margin for the text-input-table class in advancesearch.html*/
-.text-input-table 
-          {
-           margin: 25px; 
-           width: 100%;
-          }
 
 /* Styling only the table row tr elements inside the advanceSearch.html
 .text-input-table tr 

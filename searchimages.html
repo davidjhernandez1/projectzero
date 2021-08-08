@@ -6,29 +6,25 @@
     <title>Image search</title>
 </head>
 <body>
-    
-    <div class="header"> <!-- Top horizontal menu bar -->
-        <div class="header-links">
-            <a href="search.html">Google Search</a>
+    <div style="width: 100%">  <!-- To make the conatiner with entire width of the page  -->
+        <div class="header"> <!-- Top horizontal menu bar -->
+            <div class="header-links">
+                <a href="search.html">Google Search</a>
+            </div>
         </div>
-    </div>
-
     
-    <div class="search-container"> <!-- Search for an image -->
-        <img src="googleimagelogo.png" alt="Google image logo" />
-        <div class="logo-subtext">
+        <div class="search-container"> <!-- Search for an image -->
+            <img src="googleimagelogo.png" alt="Google image logo" />
 
+            <form action="https://www.google.com/search" method="get">
+
+                        Images:
+                        <input name="as_q" type="text" class="searchbar-sm">
+
+                <input type="hidden" name="tbm" value="isch" />
+            </form>
         </div>
-        <form action="https://www.google.com/search" method="get">
-
-            <tr>
-                <td> Images: </td>
-                <td> <input name="as_q" type="text" class="searchbar-sm"> </td>
-            </tr>
-
-            <input type="hidden" name="tbm" value="isch" />
-        </form>
+        <!-- SEARCH CONTAINER END -->
     </div>
-    <!-- SEARCH CONTAINER END -->
 </body>
 </html>

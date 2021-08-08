@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
+<!-- Search page -->
+    <head>                  
+        <title>Google Search</title>
+
+        <style>
+            p {font-family: Tahoma, Verdana, sans-serif;}
+        </style>
+            
+        <link rel="stylesheet" href="project0.css">
+    </head>     
+
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+
+        <div class="header">
+            <div class="header-links">
+                <a style="padding-right: 20px" href="searchimages.html">Google Image</a>
+                <a href="advancesearch.html">Google Advanced Search</a>
+                <br><br>
+            </div>
+        </div>
+    
+        <div class="main-search">
+            <form action="https://www.google.com/search" target="_new">
+                <br><br>
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
+                <br><br>
+                <input class="search_field" input type="text" name="q">
+                <br><br>
+                <input  type="submit" value="Google Search">
+                <!-- Feeling lucky button -->
+                <input  type="submit" name="searchbutton" value="I'm feeling lucky">
+            </form>
+        </div>
+
     </body>
 </html>
