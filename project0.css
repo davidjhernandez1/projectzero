@@ -13,9 +13,6 @@ h3      {
         margin: 30px 0px 10px 47px;                                     /* Shorthand property sets the margin area on all 4 sides of an element. */
         }                                                               /* Top, Right, Bottom, Left                                              */
 
-/* td   {
-        width:"15%"
-        }                                                               */
 
 header, .header-links  
         {
@@ -52,8 +49,6 @@ header, .header-links
         margin-right: 300px;
         padding: 7px;
         width: 250px; 
-        text-align: right;
-        border: 1px solid red;
  
         /* height: 300px;    doesn't work */
         }
@@ -68,14 +63,6 @@ header, .header-links
 .main_div
         {
         width: 100%;
-        border: 1px solid green;
-        }
-
-.input-field
-        {
-        width: 100%;
-        border: 1px solid purple;
-        margin: auto;
         }
 
 .label
@@ -91,11 +78,11 @@ header, .header-links
         border-style: none;
         width: 415px;
         height: 15px;
-        margin: 15px 4px;                                               /* Margin property shorthand for margin-top and margin-right properties */
+        margin: 20px 15px;                                              /* Margin property shorthand for margin-top and margin-right properties */
         text-align: center;
-        padding-top: 25px;
-        padding-bottom: 35px;
-        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 35px;
         padding-right: 50px;
         }
 
