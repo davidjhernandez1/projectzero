@@ -8,18 +8,18 @@ h1      {
         font-size: 42pt;
         margin: 5px;
         }
-      
+
+/* Shorthand prop sets the margin area on all 4 sides of an element: Top, Right, Bottom, Left */
 h3      {
-        margin: 30px 0px 10px 47px;                                     /* Shorthand property sets the margin area on all 4 sides of an element. */
-        }                                                               /* Top, Right, Bottom, Left                                              */
+        margin: 30px 0px 10px 47px;                                     
+        }
 
-
-header, .header-links  
+header, .header-links           /* Both div classes located in index.html                     */
         {
-        align-items: right;                                             /* Property centers the alignments for all items in the div     */
-        text-align: right;                                              /* Property specifies the horiz alignment of text in an element */
-        max-width: 1100px;                                              /* Property sets the maximum width of an element in these divs  */
-        margin: auto;                                                   /* The browser calculates the margin                            */
+        align-items: right;     /* Prop aligns right all items in the div                     */
+        text-align: right;      /* Prop specifies the horiz alignment of text in an element   */
+        max-width: 1100px;      /* Prop sets the maximum width of an element in these divs    */
+        margin: auto;           /* The browser calculates the margin                          */
         } 
 
 .header-links 
@@ -27,41 +27,36 @@ header, .header-links
         align-items: right;
         }
  
-/* Center search field & 2 buttons below - Search.html                  */
 .main-search 
-        {
-        padding-top: 60px;
+        {             /* Div to cntr logo, searchfield & 2 buttons beneath it in Search.html  */
+        padding-top: 100px;
         text-align: center;
         width: 100%
         }
 
- /* Create rounded borders in the input search field - index.html      */
-.search_field
+.search_field      /* Div rounds search field & sets width in input search field - index.html */
         {
         border-radius: 50px; 
         width: 280px;        
         }
 
-/* All foursearchbars fields being affected in the advancesearch.html   */
-.foursearchbars 
+.foursearchbars            /* Div manages the foursearchbars fields in the advancesearch.html */
         {
         border-radius: 10px;
         margin-right: 300px;
         padding: 7px;
         width: 250px; 
- 
-        /* height: 300px;    doesn't work */
         }
 
-/* To center text & search field in searchimages.html                    */
-.search-container
+.search-container                       /* To center text & search field in searchimages.html */
         {
         text-align: center;
-        border: 1px solid black;
+        margin-top: 100px;
+        /* border: 1px solid black; */
         }
-        
-.main_div
-        {
+
+.main_div           /* Width prop sets the width of the main div element in advancesearch.html */
+        {           /* does not include padding, borders, or margins!                          */
         width: 100%;
         }
 
@@ -76,14 +71,14 @@ header, .header-links
         background-color: blue;
         color: white;
         border-style: none;
-        width: 415px;
+        width: 430px;
         height: 15px;
-        margin: 20px 15px;                                              /* Margin property shorthand for margin-top and margin-right properties */
+        margin: 10px 15px;  /* Margin prop shorthand for margin-top and margin-right properties */
         text-align: center;
         padding-top: 10px;
         padding-bottom: 20px;
-        padding-left: 35px;
-        padding-right: 50px;
+        padding-left: 55px;
+        padding-right: 55px;
         }
 
 
