@@ -29,7 +29,7 @@ header, .header-links           /* Both div classes located in index.html       
  
 .main-search 
         {             /* Div to cntr logo, searchfield & 2 buttons beneath it in Search.html  */
-        padding-top: 100px;
+        padding-top: 110px;
         text-align: center;
         width: 100%
         }
@@ -37,7 +37,10 @@ header, .header-links           /* Both div classes located in index.html       
 .search_field      /* Div rounds search field & sets width in input search field - index.html */
         {
         border-radius: 50px; 
-        width: 280px;        
+        width: 510px;
+        height: 30px;
+        border-width: thin; 
+        box-shadow: 5px 5px 7px rgb(192, 191, 191);        
         }
 
 .foursearchbars            /* Div manages the foursearchbars fields in the advancesearch.html */
@@ -71,12 +74,12 @@ header, .header-links           /* Both div classes located in index.html       
         background-color: blue;
         color: white;
         border-style: none;
-        width: 430px;
+        width: 442px;
         height: 15px;
-        margin: 10px 15px;  /* Margin prop shorthand for margin-top and margin-right properties */
+        margin: 10px 3px;  /* Margin prop shorthand for margin-top and margin-right properties */
         text-align: center;
         padding-top: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
         padding-left: 55px;
         padding-right: 55px;
         }
