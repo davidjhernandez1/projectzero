@@ -14,4 +14,4 @@ Losts of patience <br>
 Book mark the instructions for projecto: https://cs50.harvard.edu/web/2020/projects/0/search/ <br>
 Harvard's CS50 Web Programming with Python and JavaScript course: https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web/course/ <br>
 
-Full project specification here:
+Full project specification here: https://cs50.harvard.edu/web/2020/projects/0/search/
