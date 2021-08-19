@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- Search page -->
     <head>                  
-        <title>Google Search</title>
+        <title>Search</title>
 
         <style>
-            p {font-family: Tahoma, Verdana, sans-serif;}
+            p {font-family: Roboto, arial, sans-serif, Tahoma, Verdana;}
         </style>
             
         <link rel="stylesheet" href="project0.css">
@@ -21,9 +21,10 @@
         </div>
     
         <div class="main-search">
-            <form action="https://www.google.com/search" target="_new">
+            <!-- <form action="https://www.google.com/search" target="_new">                    It will open in the same tab  -->
+             <form action="https://www.google.com/search" method="get" target="_blank">   <!--  It will open in a new tab     -->        
                 <br><br>
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"/>
                 <br><br>
                 <input class="search_field" input type="text" name="q">
                 <br><br>

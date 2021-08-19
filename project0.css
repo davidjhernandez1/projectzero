@@ -1,4 +1,4 @@
-/* ---------------Cascading Style Sheet for Projectzero --------------  */
+/* ---------------Cascading Style Sheet for Projectzero -----------------------------------  */
 body    {
          font-family: "Futura, Trebuchet MS, Arial, san-serif";
          color: #202124;
@@ -14,7 +14,7 @@ h3      {
         margin: 30px 0px 10px 47px;                                     
         }
 
-header, .header-links           /* Both div classes located in index.html                     */
+header, .header-links           /*                     Both div classes located in index.html */
         {
         align-items: right;     /* Prop aligns right all items in the div                     */
         text-align: right;      /* Prop specifies the horiz alignment of text in an element   */
@@ -36,11 +36,11 @@ header, .header-links           /* Both div classes located in index.html       
 
 .search_field      /* Div rounds search field & sets width in input search field - index.html */
         {
-        border-radius: 50px; 
+        border-radius: 50px;           /* Round borders around search field in index.html     */
         width: 510px;
-        height: 30px;
+        height: 40px;
         border-width: thin; 
-        box-shadow: 5px 5px 7px rgb(192, 191, 191);        
+        /* box-shadow: 5px 5px 7px rgb(192, 191, 191); */
         }
 
 .foursearchbars            /* Div manages the foursearchbars fields in the advancesearch.html */
@@ -63,13 +63,12 @@ header, .header-links           /* Both div classes located in index.html       
         width: 100%;
         }
 
-.label
+.label              /* The class label is located within the table found in advancesearch.html */
         {
         display:inline-block;
         }
 
-/* searchbutton found below the 4 searh fields in advancesearch.html    */
-.searchbutton 
+.searchbutton        /* searchbutton is located below the 4 searh fields in advancesearch.html */
         {
         background-color: blue;
         color: white;
@@ -84,6 +83,14 @@ header, .header-links           /* Both div classes located in index.html       
         padding-right: 55px;
         }
 
+ /*:hover, :focus, and :active are pseudo-classes that are determined by a user’s actions. Each */
+ /* correspond to a very specific point in how a user will interact with an element on a page   */
+ /* page such as a link or a button or an input field.                                          */ 
+.foursearchbars:hover, .foursearchbars:focus, .searchbutton:hover 
+        {
+        box-shadow: 0 0 1px 1px #888888;
+        outline: none;
+        }
 
 /* Styling only the table row tr elements inside the advanceSearch.html
 .text-input-table tr 
@@ -109,15 +116,6 @@ header, .header-links           /* Both div classes located in index.html       
            .vertical-center {
             margin-top: 15px;
           }                                                           */    
-      
-/*:hover, :focus, and :active are pseudo-classes that are determined  */
-/*                                                                    */   
-.foursearchbars:hover, .foursearchbars:focus, .searchbutton:hover 
-        {
-         box-shadow: 0 0 1px 1px #888888;
-         outline: none;
-        }
-
 
 /* the @media rule is used in media queries to apply different styles */
 /* for different media types/devices.                                 */
