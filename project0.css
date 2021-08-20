@@ -3,7 +3,14 @@ body    {
          font-family: "Futura, Trebuchet MS, Arial, san-serif";
          color: #202124;
         }
-      
+ 
+
+/* https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
+ input:focus
+        {
+        outline: none;
+        }
+
 h1      {
         font-size: 42pt;
         margin: 5px;
@@ -34,6 +41,9 @@ header, .header-links           /*                     Both div classes located 
         width: 100%
         }
 
+
+
+
 .search_field      /* Div rounds search field & sets width in input search field - index.html */
         {
         border-radius: 50px;           /* Round borders around search field in index.html     */
@@ -41,6 +51,7 @@ header, .header-links           /*                     Both div classes located 
         height: 40px;
         border-width: thin; 
         /* box-shadow: 5px 5px 7px rgb(192, 191, 191); */
+        -webkit-appearance: none;
         }
 
 .foursearchbars            /* Div manages the foursearchbars fields in the advancesearch.html */
